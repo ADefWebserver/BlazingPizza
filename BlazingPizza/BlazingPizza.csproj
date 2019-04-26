@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <LangVersion>7.3</LangVersion>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\bootstrap\bootstrap.min.css.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="3.0.0-preview4-19216-03" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0-preview4-19216-03" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0-preview4.19216.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.0.0-preview4.19216.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlazingComponents\BlazingComponents.csproj" />
+    <ProjectReference Include="..\BlazingPizza.ComponentsLibrary\BlazingPizza.ComponentsLibrary.csproj" />
+    <ProjectReference Include="..\BlazingPizza.Shared\BlazingPizza.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
